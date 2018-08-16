@@ -19,6 +19,8 @@ class deli
   end
 end
   
+  def line 
+    puts(@line==[] ? "The line is currently empty." : "The line is currently:#{deli.map.with_index{ |name, i| " #{i+1}. #{name}" }.join}")end
 
 def take_a_number(deli)
   puts("Welcome, You are number #{deli==[] ?  : deli.push(deli.last+1).last} in line.")
