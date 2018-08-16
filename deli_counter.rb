@@ -6,6 +6,9 @@ class deli
     @line=[]
     @served=0
   end
+  
+  
+  
 
 def take_a_number(deli)
   puts("Welcome, You are number #{deli==[] ?  : deli.push(deli.last+1).last} in line.")
