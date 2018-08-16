@@ -6,7 +6,7 @@ end
 
 def line(deli)
   if deli==[] then return puts("The line is currently empty.") end
-  puts("The line is currently:#{deli.map.with_index{ |name, i| " #{i+1}. #{name}" }.join}")
+  puts("The line is currently: #{deli.size} long")
 end
 
 def now_serving(deli)
