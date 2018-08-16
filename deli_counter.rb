@@ -1,8 +1,8 @@
 # Write your code here.
 
-def take_a_number(deli, name)
-  deli.push(name)
-  puts("Welcome, #{name}. You are number #{deli.size} in line.")
+def take_a_number(deli)
+
+  puts("Welcome, You are number #{deli.size} in line.")
 end
 
 def line(deli)
