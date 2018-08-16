@@ -17,10 +17,11 @@ class deli
     if @line==[] then return puts("There is nobody waiting to be served!") end
     puts("Currently serving number #{@line.shift}.")
   end
-end
-  
+
   def line 
-    puts(@line==[] ? "The line is currently empty." : "The line is currently:#{deli.map.with_index{ |name, i| " #{i+1}. #{name}" }.join}")end
+    puts(@line==[] ? "The line is currently empty." : "The line is currently:#{@line.size} #{@line.size==1 ? "person" : "persons"} long and is next serving number #{line.first}")
+  end
+end
 
 def take_a_number(deli)
   puts("Welcome, You are number #{deli==[] ?  : deli.push(deli.last+1).last} in line.")
