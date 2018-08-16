@@ -7,6 +7,10 @@ class deli
     @served=0
   end
   
+  def take_a_number(deli)
+    @served+=1
+    puts("Welcome, You are number #{deli.push(@served+1).last} in line.")
+  end
   
   
 
