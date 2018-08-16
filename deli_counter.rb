@@ -7,21 +7,29 @@ class deli
     @served=0
   end
   
-  def take_a_number(deli)
+  def take_a_number
     @served+=1
-    puts("Welcome, You are number #{deli.push(@served+1).last} in line.")
+    puts("Welcome, You are number #{@deli.push(@served+1).last} in line.")
   end
   
+  def take_a_number(deli)
+  puts("Welcome, You are number #{deli==[] ?  : deli.push(deli.last+1).last} in line.")
+  end
+  
+  C
+  
+  def now_serving(deli)
+    if deli==[] then return puts("There is nobody waiting to be served!") end
+    puts("Currently serving number #{deli.shift}.")
+  end
+end
   
 
 def take_a_number(deli)
   puts("Welcome, You are number #{deli==[] ?  : deli.push(deli.last+1).last} in line.")
 end
 
-def line(deli)
-  if deli==[] then return puts("The line is currently empty.") end
-  puts("The line is currently: #{deli.size} #{dile.size==1? "person ": "people" } long{}")
-end
+C
 
 def now_serving(deli)
   if deli==[] then return puts("There is nobody waiting to be served!") end
