@@ -1,7 +1,7 @@
 # Write your code here.
 
 class deli
-  attr_reader: 
+  attr_reader: :
   
   def intilize
     @line=[]
