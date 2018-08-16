@@ -27,7 +27,6 @@ def take_a_number(deli)
   puts("Welcome, You are number #{deli==[] ?  : deli.push(deli.last+1).last} in line.")
 end
 
-C
 
 def now_serving(deli)
   if deli==[] then return puts("There is nobody waiting to be served!") end
