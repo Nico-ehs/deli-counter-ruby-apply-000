@@ -1,6 +1,7 @@
 # Write your code here.
 
 class deli
+  attr_reader: 
   
   def intilize
     @line=[]
@@ -9,16 +10,12 @@ class deli
   
   def take_a_number
     @served+=1
-    puts("Welcome, You are number #{@deli.push(@served+1).last} in line.")
+    puts("Welcome, You are number #{@line.push(@served+1).last} in line.")
   end
-  
-  def take_a_number
-  puts("Welcome, You are number #{@line==[] ?  : @deli.push(deli.last+1).last} in line.")
-  end
-  
+
   def now_serving
-    if deli==[] then return puts("There is nobody waiting to be served!") end
-    puts("Currently serving number #{deli.shift}.")
+    if @line==[] then return puts("There is nobody waiting to be served!") end
+    puts("Currently serving number #{@line.shift}.")
   end
 end
   
