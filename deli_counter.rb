@@ -2,7 +2,7 @@
 
 def take_a_number(deli)
 
-  puts("Welcome, You are number #{deli.size} in line.")
+  puts("Welcome, You are number #{deli.push(deli.size+1).lasst} in line.")
 end
 
 def line(deli)
